@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>博客-分享生活</title>
+	<link rel="stylesheet" href="CSS/base.css">
+	<link rel="stylesheet" href="CSS/index.css">
+<script src="JS/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<img src="img/first/bg1.jpg" alt="" class="img1">
+<!-- S = nav -->
+		<div class="nav">
+			
+			<div class="nav-con">
+			<a href="start.html">首页</a>&nbsp;&nbsp;
+			
+			<a href="login.html">登录</a> |
+			<a href="register.html">注册</a>
+			
+			</div>
+			
+		</div>
+<!-- E = nav -->
+	<div class="bg">
+	
+		
+		<div class="left">分享生活、分享爱</div>
+		
+		
+		
+	
+		<div class="search">
+			<input type="text" class="search-con" name="search-con" placeholder="&nbsp;&nbsp;寻找你喜欢的..." onmouseenter="this.placeholder=''" onmouseleave="this.placeholder='&nbsp;&nbsp;寻找你喜欢的....'"/>
+			<a href="#" onclick="alert('请在输入框内输入...')"><s></s></a>
+		</div>
+		
+	</div> 
+
+</div>
+
+<!-- S  = footer -->
+<div class="footer-con">
+		<div class="left">
+		<ul class="clearfix">
+			<li class="top">首页</li>
+			<li>博客咨询</li>
+			<li>博客创建</li>
+			
+		</ul>
+		</div>
+		<div class="middle">
+		<ul class="clearfix">
+			<li class="top">联系与合作</li>
+			<li>联系我们</li>
+			<li>用户反馈</li>
+			
+		</ul>
+		</div>
+		<div class="right">
+		<ul class="clearfix">
+			<li class="top">移动客户端</li>
+			<li>官方微博</li>
+			<li>官方微信</li>
+			<li>官方QQ</li>
+			
+		</ul>
+		</div>
+		<div class="footer-right">
+		关注我们
+		</div>
+	
+	<div id="bottom">
+		<div><p>14NIITCST项目组 @金陵科技学院</p></div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+
+	$('.img1').on('mouseover',function(){
+		$('.nav').show();
+	});
+	$('.img1').on('click',function(){
+		$('.nav').show();
+	});
+	$('.img1').on('mousewheel',function(){
+		$('.nav').hide();
+	});
+	
+	});
+</script>

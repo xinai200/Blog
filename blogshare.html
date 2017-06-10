@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>博客分享</title>
+	<link rel="stylesheet" href="CSS/base.css">
+	<link rel="stylesheet" href="CSS/blogshare.css">
+	<link rel="stylesheet" href="JS/bootstrap/css/bootstrap.min.css">
+	<script src="JS/jquery-3.2.0.min.js"></script>
+</head>
+<body style="background-color: #fff">
+	<div class="top">
+		<div class="left">欢迎来到&nbsp;<strong>我的</strong>&nbsp;博客!</div>
+		<a href="infoself.html"><div class="right"><s class="pic"></s></div></a>
+		<div class="search">
+			<input type="text" class="search-con" name="search-con" placeholder="查询关键字..." onmouseenter="this.placeholder=''" onmouseleave="this.placeholder='查询关键字...'"/>
+			<a href="#" onclick="alert('请在输入框内输入内容...')"><s></s></a>
+		</div>
+	</div>
+	<div class="container">
+		
+		<!-- S = 导航 -->
+		<nav class="nav"> 
+			<ul class="nav nav-tabs">
+  			<li role="presentation" ><a href="mainpage.html">&nbsp;&nbsp;&nbsp;&nbsp;博客首页</a></li>
+  			<li role="presentation" ><a href="blogshare.html">&nbsp;&nbsp;&nbsp;&nbsp;博客分享</a></li>
+ 		 	<li role="presentation"><a href="infoself.html">&nbsp;&nbsp;&nbsp;&nbsp;个人信息</a></li>
+			</ul>
+		</nav>
+		<!-- E = 导航 -->
+		<!-- S = 次导航 -->
+		<div class="subnav">
+		
+			<ul class="nav nav-pills nav-justified">
+  				<li role="presentation" class="active"><a href="#">技术专区</a></li>
+  				<li role="presentation"><a href="#">时尚.实时</a></li>
+  				<li role="presentation"><a href="#">生活.情感</a></li>
+			</ul>
+		</div>
+		<!-- E = 次导航 -->
+		<!-- S = 主体 -->
+		<div class="mainbody">
+			<div class="part1">
+				<div class="title">标题</div>
+				<div class="author">作者，发布时间</div>
+				<div class="text"><a href="text.html"><img src="img/blogshare/01.jpg" alt="主题照片"></a></div>
+				<a href="#" class="delete" onclick="alert('恭喜您，删除成功！');">删&nbsp;&nbsp;除</a>
+				<a href="textself.html" class="modify">修&nbsp;&nbsp;改</a>
+			</div>
+			<div class="part1">
+				<div class="title">标题</div>
+				<div class="author">作者，发布时间</div>
+				<div class="text"><a href="text.html"><img src="img/blogshare/03.jpg" alt="主题照片"></a></div>
+				<a href="#" class="delete" onclick="alert('恭喜您，删除成功！');">删&nbsp;&nbsp;除</a>
+				<a href="textself.html" class="modify">修&nbsp;&nbsp;改</a>
+			</div>
+			<div class="part1">
+				<div class="title">标题</div>
+				<div class="author">作者，发布时间</div>
+				<div class="text"><a href="text.html"><img src="img/blogshare/06.jpg" alt="主题照片"></a></div>
+				<a href="#" class="delete" onclick="alert('恭喜您，删除成功！');">删&nbsp;&nbsp;除</a>
+				<a href="textself.html" class="modify">修&nbsp;&nbsp;改</a>
+			</div>
+			<div class="part1">
+				<div class="title">标题</div>
+				<div class="author">作者，发布时间</div>
+				<div class="text"><a href="text.html"><img src="img/blogshare/04.jpg" alt="主题照片"></a></div>
+				<a href="#" class="delete" onclick="alert('恭喜您，删除成功！');">删&nbsp;&nbsp;除</a>
+				<a href="textself.html" class="modify">修&nbsp;&nbsp;改</a>
+			</div>
+			<div class="part1">
+				<div class="title">标题</div>
+				<div class="author">作者，发布时间</div>
+				<div class="text"><a href="text.html"><img src="img/blogshare/05.jpg" alt="主题照片"></a></div>
+				<a href="#" class="delete" onclick="alert('恭喜您，删除成功！');">删&nbsp;&nbsp;除</a>
+				<a href="textself.html" class="modify">修&nbsp;&nbsp;改</a>
+			</div>
+
+		</div>
+		<!-- E = 主体 -->
+		
+		<a href="#" class="next1">下一页</a>
+		<a href="#" class="next">上一页</a>
+		<!-- S = 评论 -->
+		<div class="say">
+			<!-- UY BEGIN -->
+		<div id="uyan_frame" class="say1"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+<!-- UY END -->
+		</div>
+		<!-- E = 评论 -->
+		<footer class="bottom">
+			<div class="con1">媒体报道&nbsp;&nbsp;|&nbsp;&nbsp;关于我们&nbsp;|&nbsp;&nbsp;相关法律&nbsp;|&nbsp;&nbsp;申请博客&nbsp;|&nbsp;&nbsp;百度地图&nbsp;|&nbsp;&nbsp;合作伙伴</div>
+			<div class="con2">&copy;All Rights Reserved.所有版权归14NIITCST项目组</div>
+		</footer>
+	</div>
+	<!-- S = 侧边栏 -->
+	<aside class="side">
+		<div class="sidebar">
+		<img src="img/mainpage/pic04.jpg" alt="">
+		<h1><img src="img/mainpage/pic05.1.jpg" alt="" class="img-circle"></h1>
+		<a href="#">日出</a>
+		</div>
+		<div class="know"><a href="index.html">退出登录</a></div>
+		<div class="pic"><s class="s1"></s> <s class="s2"></s></div>	
+	</aside>
+		<!-- E = 侧边栏 -->
+</body>
+</html>
+<!-- <script>
+	$(function(){
+		$('.text').on('mouseenter',function(){
+			this.style.css('backgroundColor','red');
+		});
+	});
+</script> -->

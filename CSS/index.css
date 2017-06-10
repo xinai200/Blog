@@ -1,0 +1,223 @@
+body {
+	background-color: #ededed;
+	width: 100%;
+}
+.container {
+	width: 100%;
+	/*height: 800px;*/
+	max-width: 1920px;
+	min-width: 300px;
+	margin: 0 auto;
+	position: relative;
+	/*background: url('/i');*/
+}
+.container > img {
+ width: 100%;
+ /*height: 900px;*/
+ position:relative;
+ top: 0;
+ left: 0;
+}
+ .container .nav {
+	width: 100%;
+	max-width: 1920px;
+	min-width: 300px;
+	height: 40px;
+	background-color: white;
+	border-radius: 3px;
+	border: 1px solid #d9d9d9;
+	box-shadow: 0 2px 2px #d9d9d9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.container .nav .nav-con {
+	
+	height: 40px;
+	position: absolute;
+	top:0;
+	right: 90px;
+	float: right;
+}
+.container .nav .nav-con > a {
+	line-height: 40px;
+	font-size: 20px;
+	font-family: "黑体 Regular";
+	font-weight: bolder;
+	color: #2e3315;
+}
+.container .nav .nav-con > a:hover {
+	background: #a1a1a1;
+	color: #fff;
+	border-radius: 4px;
+}
+.bg {
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+.bg .left  {
+	
+	font-family: '书体坊兰亭体';
+	font-size: 90px;
+	color: #a1a1a1;
+	width: 100%;
+	text-shadow: 0 2px 4px #ededed;
+}
+/* S =  search */
+.bg .search {
+	width: 500px;
+	margin: 0 auto;
+    position: absolute;
+	/*left: 300px;*/
+	/*top: 350px;*/
+	top: 130%;
+	left: 10%;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	/* position: relative; */
+}
+.bg .search-con {
+	width: 450px;
+	height: 30px;
+	background-color: rgba(198, 211, 230, .5);
+}
+.bg .search-con:hover{
+	background-color: rgba(241, 246, 252, .7);
+	color: #fff;
+
+}
+.bg .search-con:active {
+	border: 2px solid #fff;
+	/* content: none; */
+}
+.bg .search > a {
+	
+	width: 48px;
+	height: 30px;
+	float: right;
+}
+.bg .search > a:hover {
+  background: #cee0ee;
+}
+.bg .search > a > s {
+	width: 25px;
+	height: 22px;
+	background: url('../img/first/sprite.png') -130px 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 3px;
+	margin-left: 6px;
+	/* position: fixed; */
+}
+
+/* E =  search */
+/* S = footer */
+.footer-con {
+	width: 100%;
+	height: 190px;
+	background-color: #4a4a4a;
+	position: relative;
+}
+.footer-con .left {
+	width: 20%;
+	position: absolute;
+	left: 30px;
+	margin-top: 40px;
+	float: left;
+	color: #eeeeee;
+	
+	font-size: 15px;
+}
+.footer-con .left > ul  {
+	width: 100%;
+	height: 140px;
+}
+.footer-con .left > ul > li {
+	/*width: 20%;*/
+	padding-bottom: 10px;
+}
+.footer-con .middle {
+	width: 20%;
+	position: absolute;
+	margin-top: 40px;
+	float: left;
+	color: #eeeeee;
+	left: 150px;
+	font-size: 15px;
+	
+}
+.footer-con .middle > ul >li {
+	padding-bottom: 10px;
+
+}
+.footer-con .middle > ul  {
+	width: 100%;
+	height: 140px;
+}
+.footer-con .right {
+	width: 20%;
+	position: absolute;
+	margin-top: 40px;
+	float: left;
+	color: #eeeeee;
+	left: 290px;
+	font-size: 15px;
+	
+}
+.footer-con .right > ul  {
+	width: 100%;
+	height: 140px;
+}
+.footer-con .right > ul >li {
+	padding-bottom: 10px;
+
+
+}
+.footer-con .top {
+	font-size: 20px;
+	margin-bottom: 14px;
+}
+.footer-con .footer-right {
+	width: 20%;
+	position: absolute;
+	right: 60px;
+	height: 120px;
+	padding-left: 20px;
+	
+	margin-top: 40px;
+	float: left;
+	color: #eeeeee;
+	/* right: 30px; */
+	font-size: 20px;
+	border-left: 1px solid #eeeeee;
+	
+}
+.footer-con #bottom {
+	position: absolute;
+	top: 170px;
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+
+.footer-con #bottom > div {
+	position: absolute;
+	width: 100%;
+	/*width: 40%;*/
+	color: #808080;
+	background-color: #2a2b2b;
+	
+	
+}
+.footer-con #bottom > div > p {
+	
+	width: 40%;
+
+	margin-left: 50%;
+	/* text-align: right; */
+	line-height: 30px;
+}
+/* E = footer */

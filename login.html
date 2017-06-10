@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="CSS/adminLogin.css" />
+<title>登录</title>
+
+<link rel="stylesheet" href="JS/bootstrap/css/bootstrap.min.css">
+	<script src="JS/jquery-3.2.0.min.js"></script>
+	<script src="JS/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		img {
+			margin-top: 5px;
+			margin-right: 5px;
+			display: none;
+		}
+	
+	</style>
+</head>
+<body>
+<div id="content">
+	<center class="main">
+		<p class="con">
+			登&nbsp;录
+		</p>
+		<div class="con_panel">
+			<form action="#" method="get" class="form1">
+			<div class="font"><s class="s1"></s></div>
+			<input type="text" name="phones/emails" class="name" placeholder="&nbsp;手机号/邮箱"/><img class="back1 img1" src="img/login/yes.png"></img><img class="back2 img1" src="img/login/no.png"></img><br>
+
+			<input type="password" name="password" class="psw" placeholder="&nbsp;密码"/><s class="s2"></s><img class="back3 img2" src="img/login/yes.png"></img><img class="back4 img2" src="img/login/no.png"></img>
+
+			<div class="radio1">
+			<input type="radio" name="t1" id="username" value="username" /><lable for="username">用户</lable> &nbsp;&nbsp;
+			<input type="radio" name="t1" id="admin"  value="admin" /><lable for="admin">管理员</lable>
+			</div>
+			<br>
+			<div class="checkbox1"><input type="checkbox" name="checkbox">&nbsp;我已经阅读相关规定</div><br>
+			<a href="mainpage.html" class="login">登录</a>
+			<a href="#" class="a1">没有账号？</a>
+			<a href="register.html" class="register">注册</a>
+			</form>
+		</div>
+	
+	</center>
+</div>
+</body>
+</html>
+<script>
+	!function(){
+		var $ = function(selector){
+			return document.querySelector(selector);
+		};
+		$('.name').addEventListener('blur',function(){
+		
+		var regex = /^\w{6}$/;
+		if(regex.test(this.value)) {
+			$('.back1').style.display = 'inline-block';
+			$('.back2').style.display = 'none';
+		}else{
+			$('.back1').style.display = 'none';
+			$('.back2').style.display = 'inline-block';
+		}
+	 });
+		$('.psw').addEventListener('blur',function(){
+		
+		var regex = /^\w{6,8}$/;
+		if(regex.test(this.value)) {
+			$('.back3').style.display = 'inline-block';
+			$('.back4').style.display = 'none';
+		}else{
+			$('.back3').style.display = 'none';
+			$('.back4').style.display = 'inline-block';
+		}
+	 });
+	}();
+</script>

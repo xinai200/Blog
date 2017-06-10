@@ -1,0 +1,269 @@
+body, html { font-size: 100%;   padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container{
+  margin: 0 auto;
+}
+/* 正式代码开始 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei",sans-serif;
+}
+
+.heading-primary {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+}
+
+.container .info {
+   /* background-color: #38cc70; */
+   background-color: #949494;
+   text-align: center;
+   font-weight: bolder;
+/* color: #22dfb0; */
+   padding: 2em;
+   text-decoration: none;
+   color: #fff;
+   font-family: '书体坊兰亭体';
+   font-size: 40px;
+   position: relative;
+}
+.container .info .return {
+  border-radius: 9px;
+  font-size: 20px;
+  padding: 15px;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  font-family: "Microsoft YaHei",sans-serif;
+  background-color: #b5b9b5;
+}
+.accordion dl,
+.accordion-list {
+  border: 1px solid #ddd;
+}
+.accordion dl:after,
+.accordion-list:after {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+  /* background-color: #2ba659; */
+  background: #949494;
+}
+
+.accordion dd,
+.accordion__panel {
+  background-color: #eee;
+
+  font-size: 1em;
+  line-height: 1.5em;
+  height: 400px;
+}
+
+.accordion p {
+  padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+  position: relative;
+  background-color: #eee;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+}
+
+.accordionTitle,
+.accordion__Heading {
+  /* background-color: #38cc70; */
+  background-color: #949494;
+  /* text-align: center; */
+  font-weight: 700;
+  font-size: 20px;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #30bb64;
+
+}
+i{
+  color: #135e9d;
+  width: 100px;
+  font-weight: bolder;
+  margin-left: 200px;
+ }
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #d3d2d2;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #949494;
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  max-height: 50em;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+  margin-left: 10px;
+}
+.accordionItem >div {
+   margin-left: 40px;
+}
+.accordionItem > s {
+  
+}
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 15em;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+}
+.accordionTitle > s {
+  
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+.animateIn {
+  -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+          animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+          animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+/* 表单 */
+.accordionItem .form01 {
+  width: 500px;
+  height: 200px;
+  margin-left:200px;
+  
+}
+.accordionItem .form01 .table1 > tr > td > lable {
+  /* border-radius: 4px; */
+ color: #dedede;
+}
+.accordionItem .form01 .table1 > tr .con > a {
+  color: red;
+}
+.accordion > dl > dt > dd.save {
+  margin-top: 20px;
+
+}
+.accordion > dl > dd.img1 {
+  display: block;
+  margin-left: 100px;
+}
+

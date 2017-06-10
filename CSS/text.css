@@ -1,0 +1,348 @@
+
+.top {
+	width: 100%;
+	height: 50px;
+	/* background: #242424; */
+	background: #c5c5c5;
+	position: fixed;
+	z-index: 1000; /*固定再顶部*/
+}
+.top .left {
+	color: white;
+	line-height: 50px;
+	font-family: '方正楷体简体';
+	font-size: 20px;
+	margin-left: 30px;
+	float: left;
+
+}
+.top .left > strong {
+	color: #11470a;
+}
+.top .right {
+	/* background: red; */
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 240px;
+	position: relative;
+}
+.top .right:hover {
+	background-color:#c2c2c2;
+}
+
+.top .right > s  {
+	background: url('../img/first/sprite.png') -34px 0;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.top .search {
+	width: 220px;
+	height: 40px;
+    float: right;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	/* border: 1px solid #fff; */
+	border-radius: 6px;
+}
+.top .search .search-con {
+	width: 160px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+	background-color: #f0f0f0;
+}
+.top .search-con:hover{
+		background-color: rgba(244, 244, 244, .9);
+	color: #fff;
+}
+.top .search-con:active {
+	border: 2px solid #fff;
+	/* content: none; */
+}
+.top .search > a {
+    width: 38px;
+	height: 30px;
+	float: right;
+}
+.top .search > a > s {
+	width: 26px;
+	height: 24px;
+	
+	background: url('../img/first/sprite.png') -130px 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-left: 4px;
+	/* position: absolute; */
+}
+/* E = top */
+
+.container {
+	width: 100%;
+	/*height: 1300px;*/
+	max-width: 970px;
+	min-width: 300px;
+	background: #f5f5f5;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+}
+/* S = 侧边栏 */
+.container .side {
+	width: 29%;
+	height: 1100px;
+	float: left;
+	background: #F2E3DA;
+	position: relative;
+}
+.container .side .top1 {
+	width: 100%;
+	height: 240px;
+}
+.container .side .top1 .img1{
+	position: absolute;
+	left:13%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.container .side .evaluate {
+	width: 100%;
+	height: 200px;
+	text-align: left;
+
+	color: #F17E7E;
+	background: #D8C1C1;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.container .side .evaluate > p {
+	margin-top: 22px;
+	padding-left: 30px;
+}
+.container .side .evaluate > p >a {
+	color: #F17E7E;
+	text-decoration: none;
+}
+.container .side .evaluate > p > a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.container .side .evaluate .a4 {
+	background: #C777EB;
+}
+.container .side .evaluate .a4 > s{
+width: 26px;
+	height: 25px;
+	background: url('../img/first/sprite.png') -125px -74.5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.container .side .evaluate .a5 {
+	border: 1px solid white;
+	border-radius: 5px;
+	
+}
+.container .side .evaluate .a5:hover {
+	background: #AEACAC;
+	color: white;
+}
+.container .side .evaluate .a6 {
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.container .side .evaluate .a6:hover {
+	background: #AEACAC;
+	color: white;
+}
+.container .side .evaluate  .a4 > s:hover {
+	width: 26px;
+	height: 25px;
+	background: url('../img/first/sprite.png') -156px -74.5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.container .side .count {
+	width: 100%;
+	height: 600px;
+	color: #848484;
+	font-size: 20px;
+	font-weight: bolder;
+
+}
+.container .side .count > p {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+/* E = 侧边栏 */
+/* S = 主体 */
+.container .mainbody {
+	/* border: 1px solid green; */
+	width: 70%;
+	height: 1100px;
+	
+	float: right;
+	position: relative;
+	background-color: #fdfff1;
+
+}
+.container .mainbody .title {
+	width: 100%;
+	height: 50px;
+	border: 1px solid green;
+	text-align: center;
+}
+.container .mainbody .author {
+	width: 100%;
+	height: 30px;
+	border: 1px solid yellow;
+	text-align: center;
+}
+.container .mainbody .text {
+	width: 100%;
+	height: 900px;
+	border-bottom: 1px solid yellow;
+	text-align: center;
+}
+/* E = 主体 */
+.container .back {
+	width: 60px;
+	height: 50px;
+	border-radius: 16px;
+	color: #336080;
+	font-size: 20px;
+	font-weight: bolder;
+	float: left;
+	margin-left: 40px;
+	margin-top: 40px;
+	border:1px solid #c5c5c5;
+	text-align: center;
+	line-height: 50px;
+}
+.container .back:hover {
+	background: #4F5864;
+	text-decoration: none;
+	color: white;
+}
+.container .save {
+	width: 60px;
+	height: 50px;
+	border-radius: 16px;
+	color: #336080;
+	font-size: 20px;
+	font-weight: bolder;
+	float: left;
+	margin-left: 100px;
+	margin-top: 40px;
+	border:1px solid #c5c5c5;
+	text-align: center;
+	line-height: 50px;
+}
+.container .save:hover {
+	background: #4F5864;
+	text-decoration: none;
+	color: white;
+}
+.container .publish {
+	width: 60px;
+	height: 50px;
+	border-radius: 16px;
+	color: #336080;
+	font-size: 20px;
+	font-weight: bolder;
+	float: left;
+	margin-left: 100px;
+	margin-top: 40px;
+	border:1px solid #c5c5c5;
+	text-align: center;
+	line-height: 50px;
+}
+.container .publish:hover {
+	background: #4F5864;
+	text-decoration: none;
+	color: white;
+}
+.container .next {
+	width: 60px;
+	height: 50px;
+	border-radius: 16px;
+	color: #336080;
+	font-size: 17px;
+	font-weight: bolder;
+	float: right;
+	margin-right: 60px;
+	margin-top: 40px;
+	border:1px solid #c5c5c5;
+	text-align: center;
+	line-height: 50px;
+}
+.container .next:hover {
+	background: #4F5864;
+	text-decoration: none;
+	color: white;
+}
+/*S = 评论*/
+.container .comment {
+	width: 100%;
+	height: 600px;
+	
+	position: absolute;
+	bottom: -620px;
+}
+.container .comment >textarea {
+	width: 98.5%;
+}
+.container .comment > a {
+	border-radius: 10px;
+	width: 60px;
+	height: 40px;
+	border:1px solid #9B9B9B;
+	color: #333333;
+	font-size: 15px;
+	float: right;
+	margin-right: 100px;
+	text-align: center;
+	line-height: 40px;
+}
+.container .comment > a:hover {
+	background: #9C9C9C;
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+/*E = 评论*/
+/* S = 底部 */
+footer {
+	width: 100%;s
+	height: 40px;
+	position: absolute;
+	/* background-color: red; */
+	bottom: -750px;
+
+}
+footer .con1 {
+	color: #7d7d7d;
+	width: 60%;
+	margin: 0 auto;
+	/* background: yellow; */
+	padding-left: 60px;
+	/* margin-left: 20px; */
+}
+footer .con2 {
+	color: #7d7d7d;
+	width: 40%;
+	
+	/* background: yellow; */
+	padding-left: 330px;
+	/* margin-left: 20px; */
+}
+/* E =底部 */
+/* E = main */
